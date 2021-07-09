@@ -4,7 +4,7 @@
 
 #define LED_DDR		DDRA			///< DDR of indicator LED.
 #define LED_PORT	PORTA			///< Port of indicator LED.
-#define LED_PIN		PA0				///< Pin of indicator LED.
+#define LED_PIN		PA0			///< Pin of indicator LED.
 
 void PORT_INIT(void);
 void COMPARATOR_INIT(void);
@@ -36,5 +36,5 @@ void PORT_INIT(void){
  */
 
 void COMPARATOR_INIT(void){
-	ACSR = 0x00;						///< Enable Analog Comparator by setting ACD to 0.
+	ACSR = 0x00;				///< Enable Analog Comparator by setting ACD to 0.
 }
